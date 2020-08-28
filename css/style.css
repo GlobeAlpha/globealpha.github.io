@@ -184,15 +184,10 @@ a
 img.thumb {
     width: 620px;
     height: 400px;
-    border: 3px solid transparent;
-    /*border-top: 3px solid purple;
-    border-left: 3px solid purple;
-    border-bottom: 3px solid purple;
-    border-right: 3px solid purple;*/
-    background: -moz-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100% );
-    background: -webkit-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100% );
-    background: -o-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100% );
+    border: 3px solid green;
+  
     align: center;
+    border-radius: 20px;
 }
 #Dialogbox
 {
