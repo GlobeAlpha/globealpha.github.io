@@ -70,7 +70,8 @@ td
 @media all and ( min-width : 320px ){
 #Background
 {
-
+    background: beige;
+    padding: 11px;
 }
 }
 
