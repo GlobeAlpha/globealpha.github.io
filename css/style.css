@@ -25,7 +25,9 @@ width: 100vw;
 
 .Socials
 {
-  float:right;
+    float: right;
+    left: -112px;
+    position: relative;
 }
 
 #About
@@ -56,7 +58,7 @@ td
 #portfolio
 {
  color:#ff3300;
- 
+ margin: 31px;
 }
 
 .title
