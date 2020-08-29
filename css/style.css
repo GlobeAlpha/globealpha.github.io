@@ -20,9 +20,12 @@ background-attachment: fixed;
 background-position: center center;
 background-size: cover;
 font-size:12px; 
-width: 100vw;
+width: 100vw;  
+}
 
-  
+.Socials
+{
+  float:right;
 }
 
 #About
