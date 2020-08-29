@@ -23,6 +23,12 @@ font-size:12px;
 width: 100vw;  
 }
 
+.Logo
+{
+    right: -14px;
+    top: 7px;
+    position: relative;
+}
 .Socials
 {
     float: right;
