@@ -1,254 +1,355 @@
 
-*
+/*Stykesheet Information
+Title: General Styles 
+Author:Maciek Bajda @globealpha
+Tags: Portfolio 
+*/
+
+
+@import  'socials.css';
+@import 'navigation.css';
+@import 'HamBurger_Menu.css';
+@import 'media_queries.css';
+@import 'About.css';
+@import 'Work.css';
+
+
+
+
+@keyframes CardRotation
 {
-  padding:0 ;
+    0% 
+    {
+        transform: rotateY(45deg);
+    }
+
+    50% {
+        transform: rotateY(90deg);
+    }
+
+    100%
+    { 
+        transform:rotateY(180deg);
+
+    }
+}
+
+
+
+* 
+{
+  padding: 0;
   margin: 0;
-
 }
-html
+
+html 
 {
-  height: 100vh;
-  
+    display:inline;
+    height: auto;
 }
 
-body
-{  
-  font-family:'Aharoni';
-  
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center center;
-background-size: cover;
-font-size:12px; 
-width: 100vw;
-
-  
-}
-
-#About
+body 
 {
-color:#ff3300;   
-
+    background-image: url("../images/bg.jpeg");
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    height: 100%;
 }
 
-#about
+
+
+
+.active--tab 
 {
- font-size:20px;
- color:black;
-
+    background-color: yellow;
+    color:green;
 }
 
-#Portfolio 
+/*Work*/
+
+/* Card  */
+.ShowCaseCard 
 {
- font-size:15px;
- padding: 10px;
- width: 100%;
- }
- 
-td
-{
-  padding: 10px;
-}
-
-#portfolio
-{
- color:#ff3300;
- 
-}
-
-.title
-{
- color: #ff3300;
- font-size:30px;
-}
-
-@media all and ( min-width : 320px ){
-#Background
-{
-
-}
-}
-
-.main
-{
-font-size:25px;
-
-color:#ff3300;
-}
-
-#me
-{
-  width:100px;
-  height:100px;
-  border-radius:50%;
-  border-style:solid;
-  border-color:black;
-}
-
-.fa
-{
-  padding: 14px;
-  font-size:14px;
-  border-radius: 50%;
-  border-color:white;
-  border: 5px; 
-  text-align:left;
-  text-decoration: none;
-  margin: 10px 2px; 
-}
-
-.fa-facebook
-{
-  background: #3B5998;
-  
-  color: white;
-}
-
-.fa-twitter
-{
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-linkedin
-{ 
-  background: #007bb5;
-  color: white;
-}
-
-.fa-free-code-camp
-{
-  background: green;
-  color:white;
-} 
-
-.fa-github
-{
-  background-color: black;
-  color: white;
-}
-
-.button
-{
- border-radius: 14px;
- 
- border:solid 2px;
- padding: 8px;
- margin:7px ;
- background: inherit;
- border-color: white;
- text-decoration: none;
- /* color:yellow; */
-}
-
-a
-{
- text-align:center;
- color: black;
- text-decoration:none;
-}
-/*#Hirebtn
-{
-  border-radius: 14px;
-  border:solid 2px;
-  padding: 8px;
-  margin:7px ;
-  background: inherit;
-  border-color: red;
-}*/
-
-.Headers
-{
-  color: red;
-}
-.ImgContainer {
-    position: relative;
-    
-}
-#Previous {
-    left: 340px;
-}
-#Next {
-    right: 340px;
-}
-.ImgContainer:not(:first-child) {
-    display: none;
-}
-
-.Navbtn {
-    font-size: 23px;
     position: absolute;
-    top: 310px;
+    width: 500px;
+    height: 500px;
+    top: 197px;
+    left: 341px;
+    perspective:1000px;
+    transform-style: preserve-3d;
 }
 
-img.thumb {
-    width: 620px;
-    height: 400px;
-    border: 3px solid transparent;
-    /*border-top: 3px solid purple;
-    border-left: 3px solid purple;
-    border-bottom: 3px solid purple;
-    border-right: 3px solid purple;*/
-    background: -moz-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100% );
-    background: -webkit-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100% );
-    background: -o-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100% );
-    align: center;
-}
-#Dialogbox
+
+ .ShowCaseCard:hover 
+ {
+   animation: CardRotation 6s forwards;
+   backface-visibility: hidden;
+  }
+
+
+.ShowCaseCard--front 
 {
-    color:black;
-}
-.modalDialog {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: 99999;
-    opacity: 0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
+    position: absolute;
+    color: yellow;
+    padding: 44px;
+    width: 570px;
+    height: 300px;
+    backdrop-filter: blur(9px);
+    background: rgba(0,255,0,0.5);
+    backface-visibility: hidden;
 }
 
-    .modalDialog:target {
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    .modalDialog > div {
-        width: 400px;
-        position: relative;
-        margin: 10% auto;
-        padding: 5px 20px 13px 20px;
-        border-radius: 10px;
-        background: #fff;
-        background: -moz-linear-gradient(purple, yellow);
-        background: -webkit-linear-gradient(purple, yellow);
-        background: -o-linear-gradient(purple, yellow);
-        color:black;
-
-    }
 
 
+.ShowCaseCard—-back
+{
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    background: green;
+    padding: 44px;
+    width: 644px;
+    height: 300px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
 
-/* nav
-{ 
-  background-color:Black;
-  padding: 20px 20px ;
-  text-align:center;
-  color: orange;
-  width: auto;
-  background-size: cover;
+ .ShowCaseCard--front_OwlerContainer 
+ {
+  width: 211px;
+  position: relative;
+  top: -67px;
+  left: 84px;
+  height: 177px;
+ }
+
+ .ShowCaseCard—front_CoreSkillBadges
+{
+  position:relative;
+  top: -37px;
+  right: -190px;
+}
+
+.ShowCaseCard—front_CoreSkillBadges--text 
+{
+    position: relative;
+    left: 20px;
+    top: -50px;
+    font-size: 28px;
+}
+
+.ShowCaseCard—front_CoreSkillBadges--skill_logos
+{
+    position:relative;
+    left: 36px;
+    top: -36px;
+}
+
+.ShowCaseCard--front_CoreSkillBadges_js_badge, .ShowCaseCard--front_CoreSkillBadges_react_badge 
+{   
+    width: 100px;
+    height: 56px;
+}
+
+.ShowCaseCard--front_CoreSkillBadges_js_badge
+{
+  position: relative;
+  top: 29px;
+  height: 36px;
+  right: 56px;
   
 }
 
- nav a
+
+.Project--Card--front_CoreSkillBadges_js_badge
 {
+  position: relative;
+  top: 53px;
+  height: 36px;
+  right: 9px;
+}
+.Project--Card--front_CoreSkillBadges_react_badge
+{
+  position: relative;
+  top: 54px;
+  height: 36px;
+  right: -8px;
+}
+
+
+.ShowCaseCard--front_CoreSkillBadges_js_badge--text
+{
+    position: absolute;
+    top: 79px;
+    left: -46px;
+    font-size: 21px;
+}
+
+
+.ShowCaseCard--front_CoreSkillBadges_react_badge--text 
+{
+    position: absolute;
+    left: 77px;
+    top: 80px;
+    font-size: 21px;
+}
+
+.ShowCaseCard--front_CoreSkillBadges_react_badge
+{
+    position: relative;
+    top: -29px;
+    height: 36px;
+    left: 50px;
+}
+
+
+#ShowCaseCard—-back_Title 
+{
+    position: relative;
+    left: 192px;
+    top: -16px;
+    font-size: 32px;
+}
+
+
+.ShowCaseCard—-back_gallery
+{
+    position: relative;
+    left: -26px;
+    display: inline-flex;
+    /* align-content: flex-start; */
+}
+
+.ShowCaseCard—-back_thumbnail 
+{
+  position: relative;
+  top: 11px;
+  width: 188px;
+  padding-left: 2px;
+  height:180px;
+  display: inline;
+}
+
+.ShowCaseCard—-back_text 
+{
+    font-size: 13px;
+    position: relative;
+    /* margin: -11px; */
+    /* display: flex; */
+    top: 239px;
+    left: -112px;
+}
+
+
+
+
+.rotate--button 
+{
+    position: absolute;
+    top: 370px;
+    left: 616px;
+}
+
+
+.Owl2 
+{
+  left: 122px;
+  top: 139px;
+  width: 180px;
+  clip-path: ellipse(47% 257% at 89% 58%);
+  position: relative;
+  border-radius: 100px 100px;
+  height: 184px;
+}
+
+.Owler
+{
+  position: absolute;
+  left: -107px;
+  top: -87px;
+}
+
+.Owler_subtitle
+{
+  color: yellow;
+  position: relative;
+  left: 189px;
+  top: -135px;
+}
+
+
+footer 
+{
+    background-color: brown;
+    width: 100%;
+    height: 140px;
+    position: relative;
+    top: 464px;
+}
+
+.Contact-Icons 
+{
+  position: relative;
+  font-size:20px;
+  left: 688px;
+  top: -12px;
+  display: flex;
+}
+
+.Contact-Icons_links
+{
+    position: relative;
+    display: flex;
+    font-size: 13px;
+    top: 38px;
+    right: 122px;
+
+}
+
+.LinkedIn 
+{
+    position: relative;
+    left: -25px;
+}
+
+.GitHub 
+{
+    position: relative;
+    left: 101px;
+    top: 0px;
+}
+
+.FreeCodeCamp 
+{
+    position: relative;
+    left: 36px;
+    top: 0px;
+}
+
+.Contact-Icons_header 
+{
+    font-size: 23px;
+}
+
+
+.Blog_link-button
+{
+  position: relative;
+  left: 119px;
+  padding: 10px;
+  border-radius: 21px;
+  background: white;
   text-decoration:none;
-  border:none;
-  color:white;
-} */
+  text-decoration-color: none;
+}
+
+
+
+.Site--Map 
+{
+    font-size: 28px;
+    position: relative;
+    top: 20px;
+}

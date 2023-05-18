@@ -1,172 +1,131 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html >
-
-<head>
-  
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <meta name="viewport" content="width=device-width,height=device-height user-scalable=yes, initial-scale=1, minimum-scale=1.0">
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  
-</head>
+    <head>
+      <meta charset="UTF-8">
+      <title>Portfolio</title>
+      <meta name="viewport" content="width=device-width,height=device-height user-scalable=yes, initial-scale=1, minimum-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon"  type ="image/svg" href="./images/MaciekLogo.svg">
+      <link rel="stylesheet" href="css/style.css">
+    </head>
  
 
-<body style="background-image: url(./images/bg.jpeg)" > <!--Wallhaven-26899.jpg-->
-    <div class="main">
-        <div id="Background">
+    <body style="background-image: url(./images/DarkForest.jpg);overflow-x: hidden;">
 
-            <div style="text-align:left"> <!--<button id="Hirebtn">Avaiable for Hire</button>--></div>
-            <button id="Dialogbox" color:black;"><a href="#openModal">About Me</button><!--<button class="Headers"><a href="#footer">Contact</a></button>-->
-            <!--<button class="Headers"><a href="#">Blog</a></button>-->
+        <header id="Header_Work">
+            <img class="Logo" src="./images/MaciekLogo.svg">
+            <button class="Blog_link-button"><a href="https://globealpha.github.io/DevUpdates-Blog/">Dev Updates Blog </a></button>
+
+            <nav class="Navigation">
+                <a href="index.html" class="Navigation--Tab active--tab">
+                    <p class="Navigation--Tab_text"> Home</p>
+                </a>
+
+                <a href="About.html" class="Navigation--Tab">
+                    <p class="Navigation--Tab_text">About</p>
+                </a>
+
+                <a href="Work.html" class="Navigation--Tab">
+                    <p class="Navigation--Tab_text">Work</p>
+                </a>
+            </nav>
 
 
-            
+            <div class="HamBurger">
+                <input type="checkbox" name="menu" id="HamBurger_Menu" class="Dropdown_Menu">
+                <nav class="Menu">
+                    <a href="About.html"><i class="fa fa-user"> About</i></a>
+                    <a id="Contact" href="Contact.html"><i class="fa fa-phone"> Contact</i></a>
+                    <a id="Work_Link" href="Work.html"><i class="fa fa-briefcase">Work</i></a>
+                </nav>
 
-            <div id="openModal" class="modalDialog">
-                <div>
-                    <a href="#close" title="Close" class="close">X</a>
-                    <img id="me" src="images/Maciek.jpg" />
-                    <h2><b>About me</b></h2>
-                    <p>Welcome Welcome this Maciek here,a Front End Developer.</p>
-                    <p>I am proficient in HTML,CSS and JS including jQuery for example Local Weather project.</p>
-                    <p>You are welcome to have look around ;) </p>
-                   
+                <label for="HamBurger_Menu">
+                    <span id="MenuIcon">&#9776</span>
+                </label>
+            </div>
+
+        </header>
+
+
+
+    
+        <article class="ShowCaseCard">
+            <div class="ShowCaseCard--front">
+                <figure class="ShowCaseCard--front_OwlerContainer">
+                    <img class="ShowCaseCard--front_OwlerContainer" src="images/owler.svg" alt="Owler">
+                </figure>
+
+                <h1 class="Owler_subtitle">Front End Developer</h1>
+
+                <div class="ShowCaseCard—front_CoreSkillBadges">
+                    <h2 class="ShowCaseCard—front_CoreSkillBadges--text">Core Skills </h2>
+                    <section class="ShowCaseCard—front_CoreSkillBadges--skill_logos">
+                        <img src="images/js_Badge.svg" class="ShowCaseCard--front_CoreSkillBadges_js_badge">
+
+                        <br />
+                        <p class="ShowCaseCard--front_CoreSkillBadges_js_badge--text" alt="JavaScript_Badge">Javascript</p>
+                        <br />
+
+                        <img src="images/react.svg" alt="React_Badge" class="ShowCaseCard--front_CoreSkillBadges_react_badge">
+                        <br />
+                        <p class="ShowCaseCard--front_CoreSkillBadges_react_badge--text">React</p>
+                    </section>
+                    <br />
                 </div>
+                <button class="rotate--button" type="button" >Rotate</button>
             </div>
 
 
-            <!--<div id="about">
-        <p> <b><span style="font-size:25px;">Welcome</span></b>to my Personal Portfolio! </p>
-        <p> I am a Front End Developer who loves building <b><span style="font-size:20px;">gorgeous</span></b> websites with stunning visuals.</p>
-        <p> When I am not busy getting wrist cramps I enjoy video games such as Fallout,Witcher and Mass Effect. </p>
-    </div>-->
-
-        </div>
+            <div class="ShowCaseCard—-back">
+                <h1 id="ShowCaseCard--back_Title">Showcase</h1>
 
 
-        <!-- <button>Avaiable for Hire</button> -->
-        <h3 id="portfolio"> PROJECTS</h3>
-
-        <div id="Portfolio" class="container-fluid" style="text-align:left">
-
-
-
-            <div class="ImgContainer" id="img_1" style="text-align:center">
-
-                <h3 style="color:red">Tribute</h3>
-                <img src="images/1.png" class="thumb" />
-
-
-                <br>
-                <p class="Box">Tribute to Commander Shepard the main character of Mass effect trilogy. </p>
-                <!-- <button class="button"> <a href="Projects/Tribute/index.html" target="_blank"> View Project</a></button>-->
-
+                <section class="ShowCaseCard—-back_gallery">
+                <img src="images/LandExplorer_LandForSale.png" alt=" LandExplorer_Land_For_Sale " class="ShowCaseCard—-back_thumbnail" />
+                <p class="ShowCaseCard—-back_text" id="LX_text">Land Explorer</p>
+                
+                <img src="images/Twine_ViewLog.png" alt="Twine_View_Log" class="ShowCaseCard—-back_thumbnail" />
+                <p class="ShowCaseCard—-back_text" id="Twine_text">Twine</p>
+                
+                <img src="images/Payment_Form.png" alt="Payment_Form" class="ShowCaseCard—-back_thumbnail" />
+                <p class="ShowCaseCard—-back_text" id="PaymentForm_text">Payment Form</p> 
+                </section>
+                <br />
             </div>
+        </article>
+
+        <br />
+        <br />
+        <br />
+
+        <footer style="background-color: brown; width: 100%;height: 100px; position: relative;top: 575px;">
+
+        <section class="Site--Map"><h5>Sitemap</h5></section>
+
+         <section class="Contact-Icons">
+            <h5 class="Contact-Icons_header">Contact</h5>
+               
+                <article class="Contact-Icons_links">
+                
+                    <span class="LinkedIn" style="position: relative;left: -25px;">
+                        <a href="https://uk.linkedin.com/in/maciek-bajda-a198709b" target="_blank">LinkedIn</a>
+                    </span>
 
 
-            
-            <div class="ImgContainer" id="img_2" style="text-align:center">
-                <h3 style="color:red">Quotes</h3>
-                <img src="images/2.png" class="thumb" />
-                <p class="Box">Generates Quotes from a array of quotes which then can be shared on Twitter. </p>
-            </div>
+                    <span class="FreeCodeCamp" style="position: relative;left: 36px;top: 0px;">
+                        <a href="https://www.freecodecamp.com/globealpha" target="_blank">FreeCodeCamp</a>
+                    </span>
+
+                    <span class="GitHub" style="position: relative;left: 101px;top: 0px;">
+                        <a href="https://www.github.com/globealpha" target="_blank">GitHub</a>
+                    </span>
+                
+                </article>
+        </section>
+
+        </footer>
 
 
-            
-            <div class="ImgContainer" id="img_3" style="text-align:center">
-                <h3 style="color:red">Wikipedia Viewer</h3>
-                <img src="images/3.png" class="thumb" />
-                <p class="Box">Allows to search Wikipedia and displaying all results which then directs you to Wikipedia. </p>
-            </div>
+    </body>
 
-            <div class="ImgContainer" id="img_4" style="text-align:center">
-                <h3 style="color:red">JS Calculator </h3>
-                <img src="images/4.png" class="thumb" />
-                <p class="Box">Allows user to calculate and get sums including being able chain operations. </p>
-            </div>
-
-            <div class="ImgContainer" id="img_5" style="text-align:center">
-                <h3 style="color:red">Pomodoro Clock </h3>
-                <img src="images/5.png" class="thumb" />
-                <p class="Box">Allows user to set a timer for work/study and set a timer for a break whcih is automatically triggered after session finshes.</p>
-            </div>
-
-            <div class="ImgContainer" id="img_6" style="text-align:center">
-                <h3 style="color:red">Tic Tac Toe </h3>
-                <img src="images/6.png" class="thumb" />
-                <p class="Box">Classic Game of Tic Tac Toes where user picks his character O or X.</p>
-
-            </div>
-
-            <div class="ImgContainer" id="img_7" style="text-align:center">
-                <h3 style="color:red">TODO </h3>
-                <img src="images/7.png" class="thumb" />
-                <p class="Box">A personal rebrand of a classic web dev project which allows you to create... you never guess ... a ToDo list!!!</p>
-
-            </div>
-
-
-            <div class="ImgContainer" id="img_8" style="text-align:center">
-                <h3 style="color:red">Twitch TV </h3>
-                <img src="images/8.png" class="thumb" />
-                <p class="Box">Pulls the user names of peeps following FreeCodeCamp and what they are streaming.</p>
-            </div>
-
-            <!--<div class="ImgContainer" id="img_9" style="text-align:center">
-
-
-        <img src="images/3.png" class="thumb" />
-
-
-    </div>-->
-
-
-
-            <div class="Navbtn" id="Previous">&#10094;</div>
-            <div class="Navbtn" id="Next">&#10095;</div>
-            <hr>
-        </div>
-
-       
-
-        <!--<br><!--</div> </div></div>--> <!--</td></tr>-->
-        <!--<tr><td> <h6 style="text-align:left;" class="title">Quotes </h6><img src="images/RandomQuoteGenerator.png" class="thumb">  <p class="Box"><br> Desription:Generates quotes ;)  </p> <button class="button"><a href="Projects/Random Quote Generator/index.html" target="_blank">View Project</button><hr><br></div> </div></div></a></td></tr>
-
-    <tr><td> <h6 style="text-align:left;" class="title">Local Weather</h6><img src="images/LocalWeather.png" class="thumb"><br> <p class="Box"><br>In order to show Local weather this site gets user location and using data from OpenWeather displays their local weather. </p> <button class="button"> <a href="Projects/Local Weather/index.html" target="_blank" >View Project</button><hr><br></div> </div></div></a></td></tr>
-
-    <tr><td>  <h6 style="text-align:left;" class="title">Wikipedia</h6><img src="images/Wikipedia.png" class="thumb"> <p class="Box"><br>Allows user to search through Wipedia using Wikipedia API  which is conveniantly displayed for the user.</p> <button class="button"> <a href="Projects/Wikipedia Viewer/index.html" target="_blank">View Project</button><hr></div> </div></div></a></td></tr>
-
-    <tr><td> <h6 style="text-align:left;" class="title">Twitch</h6> <img src="images/Twitch.png" class="thumb">  <p class="Box"><br>Outputs Channels that follow freecodecamp on Twitch.tv a live tame streaming service.</p> <a href="Projects/Twitch API/index.html" target="_blank"><button class="button" >View Project</button><hr></div>  </div></div></a></td></tr>
-
-    <tr><td> <h6 style="text-align:left;" class="title" >JS Calculator</h6><img src="images/JavaScriptCalculator.png" class="thumb" >  <p class="Box"><br>Allows user to calculate sums in chains rather than individually.</p> <a href="Projects/Javascript Calculator/index.html" target="_blank"><button class="button">View Project</button><hr><br></div>  </div></div></div></a></td></tr>
-
-    <tr><td><h6 style="text-align:left;" class="title">Pomodoro</h6><img src="images/Pomodoro.png" class="thumb"><p class="Box"><br>Based on productivity technique by the same name allowing user to set time for session as well break time 25 min being min for session time and 5 being min for break. </p> <a href="Projects/Pomodoro Clock/index.html" target="_blank"><button  class="button">View Project</button><hr><br></div> </div></div></a></td></tr>
-
-    <tr><td> <h6 style="text-align:left;" class="title">Tic-Tac Toe</h6> <img src="images/TicTac.png" class="thumb"><p class="Box"><br>Old Classic of Tic-Tac Toe allowing user to choise the player.</p> <a href="Projects/Tic Tac Toe/index.html" target="_blank"><button class="button">View Project</button><br><hr></div>  </div></div></a></td></tr>-->
-        <!-- <tr><td> <h6 style="text-align:left;" class="title"> TODO</h6><img src="images/TODO.png" class="thumb" ><p><br>Create a list tasks that can be ticked of when completed. </p> <a href="Projects/TODO/TODO.html" target="_blank"><button  class="button">View Project</button></div>  </div></div></a></td></tr>  -->
-        <!--</div>
-
-    </table>-->
-
-        <div id="footer">
-
-            <a href="https://facebook.com/MaciekBajda.10" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/maciek_bajda" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="https://uk.linkedin.com/in/maciek-bajda-a198709b" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.freecodecamp.com/globealpha" target="_blank"><i class="fa fa-free-code-camp"></i></a>
-            <a href="https://www.github.com/globealpha" target="_blank"><i class="fa fa-github"></i></a>
-
-        </div>
-
-
-        <script src="C:\Users\macie\OneDrive\Documents\Projects Web\portfolio\portfolio\js\jQuery.js"></script>
-        <script src="js/Slideshow.js"></script>
-        <!--https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js-->
-    </div>
-   
-
-</body>
 </html>

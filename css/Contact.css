@@ -1,0 +1,30 @@
+
+/* Stykesheet Information
+Title: Contact   Styles
+Author:Maciek Bajda @globealpha
+Tags: Portfolio Contact Footer 
+
+*/
+
+.Contact
+{
+  position: relative;
+  top: 150px;
+  left: 300px;
+  background: beige;
+  width: 550px;
+  height:300px;
+  background-color: rgba(0,0,0,0.3);
+  color: aliceblue;
+}
+
+.Contact-Icons
+{
+  position: relative;
+  left: 187px;
+}
+
+.Text
+{
+ margin:23px;
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Work</title>
+    <meta name="viewport" content="width=device-width,height=device-height user-scalable=yes, initial-scale=1, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg" href="./images/MaciekLogo.svg">
+
+
+</head>
+<body>
+    <header id="Header_Work">
+        <img class="Logo" src="./images/MaciekLogo.svg">
+        <button class="Blog_link-button"><a href="https://globealpha.github.io/DevUpdates-Blog/">Dev Updates Blog </a></button>
+
+        <nav class="Navigation">
+            <a href="index.html" class="Navigation--Tab">
+                <p class="Navigation--Tab_text"> Home</p>
+            </a>
+
+            <a href="About.html" class="Navigation--Tab">
+                <p class="Navigation--Tab_text">About</p>
+            </a>
+
+            <a href="Work.html" class="Navigation--Tab active--tab">
+                <p class="Navigation--Tab_text">Work</p>
+            </a>
+        </nav>
+
+
+        <div class="HamBurger">
+            <input type="checkbox" name="menu" id="HamBurger_Menu" class="Dropdown_Menu">
+            <nav class="Menu">
+                <a href="About.html"><i class="fa fa-user"> About</i></a>
+                <a id="Contact" href="Contact.html"><i class="fa fa-phone"> Contact</i></a>
+                <a id="Work_Link" href="Work.html"><i class="fa fa-briefcase">Work</i></a>
+            </nav>
+
+            <label for="HamBurger_Menu">
+                <span id="MenuIcon">&#9776</span>
+            </label>
+        </div>
+
+    </header>
+
+  
+    <section class="Project--Type_Filter">
+        <h1  class="Project--Type_Filter_title"> Project Type </h1>
+
+        <article class="Project--Type_Filter_text">
+            <label id="Commercial" for="Project Name" class="Commercial filter-active" >
+                <input type="radio"  checked  onclick="Project_Commercial()" name="Project Name"  value="Commercial" />Commercial
+                <span class="radio"></span>
+            </label>
+
+            <label id="Education" for="Project Name" class="Education filter-inactive">
+                <input type="radio" onclick="Project_Education()"  name="Project Name" value="Education" /> Education
+            </label>
+
+            <label id="Personal" name="Project Name" class="Personal filter-inactive">
+                <input type="radio" onclick="Project_Type()" name="Project Name"  value="Personal" /> Personal
+            </label>
+        </article>
+
+    </section>
+
+    <br />
+
+
+
+    <section class="Work_Gallery">
+        
+        
+        
+        <article class="Project--Card Personal JS">
+            <section class="Project--Card_front">
+                <img class="Project--Thumbnail" src="images/Payment_Form.png" alt="Payment_Form" />
+                <h1 class="Project--Title" id="Personal">Payment Form</h1>
+                <div class="Description">
+                    <h2 class="Description--text"> Description </h2>
+                    <p>Inspired by Payment Form on w3school Templete I create my own versio.</p>
+
+
+                    <h3>Skills Used:</h3>
+                    <img src="images/js_Badge.svg" class="Project--Card--front_CoreSkillBadges_js_badge">
+                </div>
+            </section>
+
+       
+
+        </article>   
+
+
+        <article class="Project--Card Education JS">
+            <section class="Project--Card_front">
+                <img class="Project--Thumbnail" src="images/5.png" alt="Javascript_calculator" />
+                <h1 class="Project--Title" id="Personal">Pomodoro Clock</h1>
+                <div class="Description">
+                    <h2 class="Description--text"> Description </h2>
+                    <p>Countdown clock based on pomodoro time boxing  </p>
+
+
+                    <h3>Skills Used:</h3>
+                    <img src="images/js_Badge.svg" class="Project--Card--front_CoreSkillBadges_js_badge">
+                </div>
+            </section>
+
+            
+
+        </article>
+
+        <article class="Project--Card Education JS">
+            <section class="Project--Card_front">
+                <img class="Project--Thumbnail" src="images/3.png" alt="Wikipedia_Viewer_thumbnail" />
+                <h1 class="Project--Title" id="Personal">Wikipedia Viewer</h1>
+                <div class="Description">
+                    <h2 class="Description--text"> Description </h2>
+                    <p> Wiki search which allows user to search Wikipedia  without going to the site. </p>
+
+
+                    <h3>Skills Used:</h3>
+                    <img src="images/js_Badge.svg" class="Project--Card--front_CoreSkillBadges_js_badge">
+                </div>
+            </section>
+
+      
+        </article> 
+        
+        <article class="Project--Card Education JS">
+            <section class="Project--Card_front">
+                <img class="Project--Thumbnail" src="images/4.png" alt="Javascript_calculator" />
+                <h1 class="Project--Title" id="Personal">Javascript Calculator</h1>
+                <div class="Description">
+                    <h2 class="Description--text"> Description </h2>
+                    <p> Calculator allowing chain of  operations </p>
+
+
+                    <h3>Skills Used:</h3>
+                    <img src="images/js_Badge.svg" class="Project--Card--front_CoreSkillBadges_js_badge">
+                </div>
+            </section>
+
+           
+
+        </article>
+        
+        <article class="Project--Card Education JS">
+            <section class="Project--Card_front">
+
+                <img class="Project--Thumbnail" src="images/6.png" alt="TicTacToe" />
+                <h1 class="Project--Title" id="Personal">Tic Tac Toe </h1>
+                <div class="Description">
+                    <h2 class="Description--text"> Description </h2>
+                    <p> Clone of Tic Tac Toe. </p>
+
+
+                    <h3>Skills Used:</h3>
+                    <img src="images/js_Badge.svg" class="Project--Card--front_CoreSkillBadges_js_badge">
+                </div>
+            </section>
+
+      
+
+        </article>
+
+
+        <article class="Project--Card Personal JS">
+            <section class="Project--Card_front">
+
+                <img class="Project--Thumbnail" src="images/Neon-Light.png" alt="Neon Light" />
+                <h1 class="Project--Title">Neon Light</h1>
+                <div class="Description">
+                    <h2 class="Description--text"> Description </h2>
+                    <p>This power animated button becomes brighter until it powers up the neon light ;) </p>
+
+                    <h3>Skills Used:</h3>
+                    <img src="images/js_Badge.svg" class="Project--Card--front_CoreSkillBadges_js_badge">
+                </div>
+            </section>
+
+        
+
+        </article>
+
+<article class="Project--Card Personal JS">
+            <section class="Project--Card_front">
+
+                <img class="Project--Thumbnail" src="images/7.png" alt="ToDo" />
+                <h1 class="Project--Title">ToDo list </h1>
+                <div class="Description">
+                    <h2 class="Description--text"> Description </h2>
+                    <p>Classic  To Do  list  </p>
+
+                    <h3>Skills Used:</h3>
+                    <img src="images/js_Badge.svg" class="Project--Card--front_CoreSkillBadges_js_badge">
+                </div>
+            </section>
+
+           
+
+        </article>
+
+
+
+        <article class="Project--Card Commercial React">
+            <section class="Project--Card_front">
+                <img class="Project--Thumbnail"  src ="images/lx_Logo.png" alt="Land Exproler_Logo"/>
+                <h1 class="Project--Title">Land Explorer</h1>
+                <div class="Description">
+                    <h2 class="Description--text"> Description </h2>
+
+
+ <p>what is purpose of this project  ?</p>
+ <p> Land Explorer is community mapping  tool which intergrates React with Mapxbox</p> 
+<br />
+<p>What wa my involvment in it  ?</p>
+<p>In my over 1 year  some of my greatest achiemvents on this project were turning Property listings into cards as well as aligning the toggle switch.</p>
+
+
+
+                    <h3>Skills Used:</h3>
+                    <img src="images/js_Badge.svg" class="Project--Card--front_CoreSkillBadges_js_badge">
+                    <img src="images/react.svg" class="Project--Card--front_CoreSkillBadges_react_badge">
+                </div>
+            </section>
+
+          
+        </article>
+        
+        
+        
+        
+        <article class="Project--Card Commercial React">
+            <section class="Project--Card_front">
+                <img class="Project--Thumbnail" src="images/Twine_Logo.png" alt="Twine_Logo" />
+                <h1 class="Project--Title">Twine</h1>
+                <div class="Description">
+                    <h2 class="Description--text"> Description </h2>
+
+
+
+
+
+
+
+                    <p>what is purpose of this project  ?</p>
+                    <p>
+                        Twine is a a lightweight CRM build to manage  volunteer  in 3rd sector orgs removing need  for paperwork using React and React Native to allow logs and timesheets to be monitored.
+                    </p>
+                    <br />
+                    <p>What wa my involvment in it  ?</p>
+                    <p>
+                        I wrote initial mobile reg from as well as create and view volunteer log modal as well as resining and recoloring the edit and delete icons.
+                    </p>
+
+
+
+                    <h3>Skills Used:</h3>
+                    <img src="images/js_Badge.svg" class="Project--Card--front_CoreSkillBadges_js_badge">
+                    <img src="images/react.svg" class="Project--Card--front_CoreSkillBadges_react_badge">
+                </div>
+            </section>
+
+         
+        </article>
+
+
+    </section>
+
+
+
+    <footer class="Footer--work">
+
+        <section class="Site--Map"><h5>Sitemap</h5></section>
+
+        <section class="Contact-Icons">
+            <h5 class="Contact-Icons_header">Contact</h5>
+
+            <article class="Contact-Icons_links">
+
+                <span class="LinkedIn" style="position: relative;left: -25px;">
+                    <a href="https://uk.linkedin.com/in/maciek-bajda-a198709b" target="_blank">LinkedIn</a>
+                </span>
+
+
+                <span class="FreeCodeCamp" style="position: relative;left: 36px;top: 0px;">
+                    <a href="https://www.freecodecamp.com/globealpha" target="_blank">FreeCodeCamp</a>
+                </span>
+
+                <span class="GitHub" style="position: relative;left: 101px;top: 0px;">
+                    <a href="https://www.github.com/globealpha" target="_blank">GitHub</a>
+                </span>
+
+            </article>
+        </section>
+
+    </footer>
+
+
+    <script src="C:\Users\user\Documents\Portfolio(Prog)\js\ProjectFilter.js"></script>
+
+
+</body>
+</html>

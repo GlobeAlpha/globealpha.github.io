@@ -1,0 +1,18 @@
+/* Stykesheet Information
+Title: Responsive Menu  Styles
+Author:Maciek Bajda @globealpha
+Tags: Portfolio Responsive 
+
+*/
+
+.Menu 
+{
+  float: right;
+  position: relative;
+  left: -9px;
+}
+
+.HamBurger
+ {
+  display: none;
+}

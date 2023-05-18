@@ -1,0 +1,196 @@
+/* Stykesheet Information
+Title: Work  Styles
+Author:Maciek Bajda @globealpha
+Tags: Portfolio Work 
+*/
+
+
+
+
+#Work 
+{
+    position: relative;
+    top: 36px;
+    left: 84px;
+}
+
+.Project_Listing 
+{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: green;
+}
+
+
+
+#Education 
+{
+    position: relative;
+    left: 31px;
+}
+
+#Personal 
+{
+    position: relative;
+    left: 68px;
+}
+
+
+
+.JS
+{
+display:block;
+background:white;
+}
+
+
+
+
+.Project--Card 
+{
+   width: 300px;
+   height: 200px;
+   perspective: 1000px;
+   transform-style: preserve-3d;
+}
+
+
+
+.Project--Card_front 
+{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: green;
+    padding: 44px;
+    backface-visibility: hidden;
+}
+
+
+.Project--Type_Filter 
+{
+    position: relative;
+    top: 154px;
+}
+
+
+.Project--Type_Filter_text 
+{
+   display: inline-flex;padding-left: -8px;
+}
+
+.Project--Type-dropdown {
+    position: relative;
+    left: 500px;
+    bottom: 57px;
+}
+
+
+
+.Work_Gallery 
+{
+  
+    position: relative;
+    top: 181px;
+    left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(3,300px);
+    grid-gap: 118px;
+    height: 873px;
+}
+
+
+
+.Project--Thumbnail {
+    border: solid 1px white;
+    /* background: white; */
+    font-size: 10px;
+    position: relative;
+    width: 57px;
+    height: 54px;
+    left: 107px;
+    top: -59px;
+    background: white;
+    border-radius: 50%;
+}
+
+.Project--Thumbnail_text
+{
+    position: absolute;
+    width: 50px;
+    left: 140px;
+    top: 14px;
+    font-size: 15px;
+}
+
+.Project--Title 
+{
+    display: inline;
+    font-size: 17px;
+    position: relative;
+    width: 45px;
+    height: 42px;
+    left: 30px;
+    top: -40px;
+}
+
+
+
+.Description 
+{
+    font-size: 9px;
+    font-weight: bold;
+}
+
+
+
+h3
+{
+    font-size:20px;
+    display: inline;
+}
+
+
+
+.Work_Footer 
+{
+    background-color: brown;
+    width: 100%;
+    top: 42px;
+}
+
+
+.filter-active 
+{
+    color: yellow;
+    text-decoration: underline green;
+}
+
+.filter-inactive 
+{
+    color : black;
+    text-decoration : none;
+}
+
+
+.card--filter_active
+ {
+    display: block;
+}
+
+.card--filter_inactive
+{
+ display:none;
+}
+
+
+.Footer--work 
+{
+    background-color: brown;
+    width: 100%;
+    height: 140px;
+    position: relative;
+    top: 139px;
+}
