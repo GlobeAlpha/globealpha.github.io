@@ -5,27 +5,24 @@ Tags: Portfolio Media queries
 
 */
 
+/*  breakpoints 
+496px-446px 
+438px-370px 
+445px-412px
+412px-320px
+531px-821px
+*/
+
+
+/* small screen 320px-513px */
+@import  'media_queries-small.css';
+/* medium screen 513px-720px */
+@import  'media_queries-medium.css';
+/* medium screen 513px-720px */
+@import  'media_queries-large.css';
 
 
 
-@media screen and (min-width: 900px) and (max-width: 1000px) 
-{
-  .LandingDescription 
-  {
-    position: relative;
-    height: 228px;
-    top: 216px;
-    left: -1px;
-    background-color: rgba(0, 0, 0, 0.85);
-  }
-
-  .Contact-Icons {
-    position: relative;
-    left: 303px;
-    top: 17px;
-    display: flex;
-  }
-}
 
 @media screen and (min-width: 752px) and (max-width: 834px) 
 {
@@ -80,92 +77,88 @@ Tags: Portfolio Media queries
 }
 
 
-
-@media screen and (min-width: 320px) and (max-width: 420px) 
+@media screen and (min-width: 900px) and (max-width: 1000px) 
 {
-  .HamBurger 
-  {
-    display: block;
-    position: relative;
-    left: 276px;
-    top: -54px;
-    font-size: 34px;
-  }
-
-  #HamBurger_Menu 
-  {
-    display: none;
-  }
-
-  nav 
-  {
-    display: none;
-  }
-
-  #Background 
-  {
-    height: 60px;
-  }
-
-  input[type='checkbox']:checked ~ .Menu 
-  {
-    position: absolute;
-    display: block;
-    background-color: #007bb5;
-    width: 100px;
-    height: 200px;
-    z-index: 2;
-    float: right;
-    left: -47px;
-    top: 59px;
-  }
-
-  .Logo 
-  {
-    width: 50px;
-    height: 55px;
-  }
-
   .LandingDescription 
   {
-    top: 500px;
-    left: 100px;
-    width: 100px;
-    height: 50px;
-  }
-
-  .Owl 
-  {
     position: relative;
-    left: 0px;
-    height: 150px;
-    width: 141px;
+    height: 228px;
+    top: 216px;
+    left: -1px;
+    background-color: rgba(0, 0, 0, 0.85);
   }
 
-  .Owl2 
+
+
+  .ShowCaseCard 
   {
-    height: 150px;
-    width: 141px;
-    top: 139px;
-    left: -130px;
+      position: absolute;
+      width: 79%;
+      height: 39%;
+      top: 197px;
+      left: 34px;
+      perspective:1000px;
+      transform-style: preserve-3d;
+  }
+  
+  
+ 
+    
+  .ShowCaseCard--front 
+  {
+      position: absolute;
+      color: yellow;
+      padding: 44px;
+      width: 79%;
+      height: 39%;
+      left:-336px;
+      backdrop-filter: blur(9px);
+      background: rgba(0,255,0,0.5);
+      backface-visibility: hidden;
   }
 
-  .Owler 
+    .ShowCaseCard--front_OwlerContainer
+    {
+      
+      color: yellow;
+      padding: 0;
+      margin: 0;
+      width: 79%;
+      height: 80%;
+      position: relative;
+      top: -35px;
+      left: 27px;
+    }
+  
+  
+
+
+  .ShowCaseCard—front_CoreSkillBadges
   {
-    top: 100px;
-    left: -60px;
+    position:absolute;
+    top: -37px;
+    /* right property is -197px not -38px which means that  media queries are not being tirggered   */
+    right: -38px;
   }
 
-  footer 
-  {
-    top: 400px;
-  }
 
-  .Contact-Icons 
-  {
+
+  
+
+   .ShowCaseCard:hover 
+   {
+     animation: CardRotation 6s forwards;
+     backface-visibility: hidden;
+    }
+
+
+  .Contact-Icons {
     position: relative;
-    left: 41px;
+    left: 303px;
     top: 17px;
     display: flex;
   }
 }
+
+
+

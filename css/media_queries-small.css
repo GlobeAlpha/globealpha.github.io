@@ -1,0 +1,999 @@
+/* style ="top: -48px !important;left: 27px !important;height: 40% !important;" */
+
+
+@media only  screen and (min-width: 320px) and (max-width: 467px) 
+{
+
+
+  body 
+  {
+    background-image: url(./images/DarkForest.jpg);
+    overflow-x: hidden;
+
+    height: 761px!important;
+  }
+/* Set this first  to get all elements  */
+  main 
+   {
+    height: auto;
+    width:auto;
+   }
+  
+
+   .Blog_link-button
+   {
+    top: -13px !important;
+    left: 62px !important;
+    width: 73px !important;
+
+   }
+   .Navigation { display: none; }
+  
+  .ShowCaseCard 
+  {
+      position: absolute;
+      width: 46% !important;
+      height: 19% !important;
+      top: 274px !important;
+      left: 370px !important;
+      perspective:1000px;
+      transform-style: preserve-3d;
+  }
+  
+  
+ 
+    
+  .ShowCaseCard--front 
+  {
+      position: absolute;
+      color: yellow;
+      padding: 44px;
+      width: 191px !important;
+      height: 199px !important;
+      left: -336px;
+      backdrop-filter: blur(9px);
+      background: rgba(0,255,0,0.5);
+      backface-visibility: hidden;
+  }
+
+    .ShowCaseCard--front_OwlerContainer
+    {
+      position: absolute!important;
+      top: -44px !important;
+      left: 100px !important;
+      width: 49% !important;
+      height: 48% !important;
+    }
+  
+
+    .Owler_Image
+
+    {
+      height: 70px!important;
+    }
+
+
+
+.Owler_subtitle
+{
+    font-size: 13px !important;
+    left: 46px !important;
+    top: -10px !important;
+}
+
+  .ShowCaseCard—front_CoreSkillBadges
+  {
+    position:absolute;
+    top: -133px !important;
+    right: -26px !important;
+  }
+
+
+  .ShowCaseCard—front_CoreSkillBadges--text
+  {
+    position: relative;
+    left: 49px !important;
+    top: 138px !important;
+    font-size: 15px !important;
+}
+  
+
+
+
+  .ShowCaseCard--front_CoreSkillBadges_js_badge--text 
+  {
+    
+    position: absolute!important;
+    left: -2px!important;
+    top: 39px!important;
+    font-size: 10px!important;
+}
+
+
+
+  .ShowCaseCard--front_CoreSkillBadges_react_badge--text 
+  {
+    position: absolute!important;
+    left: 62px !important;
+    top: 39px !important;
+    font-size: 10px!important;
+}
+
+
+  .ShowCaseCard—front_CoreSkillBadges--skill_logos
+  {
+      position:relative;
+      height: 10px!important;
+      width:10px!important;
+      left: 34px !important;
+      top: 142px !important;
+  
+  }
+    
+
+
+
+
+.ShowCaseCard--front_CoreSkillBadges_js_badge
+{
+  position: absolute!important;
+  top: 6px !important;
+  height: 20px!important;
+  right: -56px!important;
+  
+  
+}
+
+
+
+.ShowCaseCard--front_CoreSkillBadges_react_badge
+{
+  position: relative;
+  top: -32px!important;
+  height: 20px!important;
+  left: 24px!important;
+ 
+}
+
+
+.ShowCaseCard—-back
+
+{
+  position: absolute !important;
+  left: 216px !important;
+  width: 191px !important;
+  height: 199px !important;
+
+}
+#ShowCaseCard--back_Title
+{
+
+  position: absolute;
+  font-size: 15px;
+  top: 1px;
+}
+
+
+.ShowCaseCard—-back_gallery
+{
+  left: -100px !important;
+  top: -25px !important;
+}
+
+.ShowCaseCard—-back_thumbnail 
+{
+  position: relative;
+  top: 11px;
+  width: 63px!important;
+  padding-left: 2px;
+  height: 53px!important;
+  display: inline;
+}
+
+#Land_Explorer
+{
+  position: absolute;
+  left: 75px;
+  top: 13px;
+}
+
+
+#LX_text
+{
+  top: 38px!important;
+  left: 161px!important;
+}
+
+
+
+#Twine
+{
+  position: absolute;
+  left: 72px;
+  top: 85px;
+}
+
+#Twine_text
+{
+  top: 104px !important;
+    left: 85px !important;
+  }
+
+#Payment_Form
+{
+  position: absolute;
+  top: 155px;
+  left: 72px;
+
+}
+
+#PaymentForm_text
+{
+  top: 170px !important;
+  left: 49px !important;
+}
+
+   .ShowCaseCard:hover 
+   {
+     animation: CardRotation 6s forwards;
+     backface-visibility: hidden;
+    }
+
+
+
+
+    .rotate--button
+{
+  top: 271px !important;
+  left: 195px !important;
+  width: 84px !important;
+  height: 17px !important; 
+  font-size: 10px;
+
+}
+/* text is hidden then replaced with new text */
+#text
+{
+ visibility: hidden;
+ width: 0px;
+ height: 0px;
+}
+
+.rotate--button::before 
+{
+content: 'Click to rotate ';
+}
+  .HamBurger 
+  {
+    color: yellow!important;
+    display: block;
+    position: relative;
+    left: 260px!important;
+    top: -55px!important;
+
+    font-size: 34px;
+  }
+
+  #HamBurger_Menu 
+  {
+    display: none;
+  }
+
+  nav 
+  {
+    display: none;
+  }
+
+  #Background 
+  {
+    height: 60px;
+  }
+
+  input[type='checkbox']:checked ~ .Menu 
+  {
+    position: absolute;
+    display: block;
+    background-color: #007bb5;
+    width: 100px;
+    height: 95px!important;
+	
+    z-index: 2;
+    float: right;
+    left: 4px!important;
+    top: 59px;
+  }
+
+  .Logo 
+  {
+    width: 50px;
+    height: 55px;
+  }
+
+  .LandingDescription 
+  {
+    top: 500px;
+    left: 100px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .Owl 
+  {
+    position: relative;
+    left: 0px;
+    height: 150px;
+    width: 141px;
+  }
+
+  .Owl2 
+  {
+    height: 150px;
+    width: 141px;
+    top: 139px;
+    left: -130px;
+  }
+
+  .Owler 
+  {
+    top: 100px;
+    left: -60px;
+  }
+
+
+
+
+  .Footer--home
+  {
+    
+      width: 100%!important;
+      height: 99px!important;
+      position: absolute!important;
+      top: 683px!important;
+      left: 0px!important;
+      
+
+  }
+  .Site--Map
+  {
+     display: none;
+  }
+
+  .Contact-Icons 
+  {
+    position: relative;
+    font-size: 20px;
+    left: 74px!important;
+    top: 6px!important;
+    display: flex;
+}
+
+
+
+
+.Work_Gallery 
+{
+    position: relative !important;
+    top: 212px !important;
+    left: 80px !important;
+  
+	
+  
+} 
+
+ .Project--Card
+{
+	
+  
+    position: absolute !important;
+     left: -61px !important; 
+	top:-43px!important; 
+} 
+
+
+
+.Project--Card_front
+{
+    width: 134px !important;
+    height: 234px!important;
+     top:165px!important;	 
+}
+
+.Project--Card_Back
+{
+    width: 134px !important;
+    height: 234px !important;
+    top: 254px !important;
+    right: -33px !important;
+	
+}
+
+.ProjectShowcase_thumbnail
+{
+	
+	width: 222px !important;
+    height: 182px !important;
+}
+
+
+.Project--Thumbnail
+{
+	
+	left:39px!important;
+}
+
+
+.Project--Title
+{
+
+font-size:13px!important;
+display:block!important;
+
+}
+
+
+.Project--Card_rotate--button
+{
+	
+	
+	font-size: 12px;
+    width: 191px !important;
+    height: 42px !important;
+    top: 272px !important;
+    left: 16px !important;
+}
+
+
+
+.Project--Card_rotate--button
+{
+	
+	position: absolute;
+    top: 392px;
+    left: 63px;
+    width: 202px;
+    height: 45px;
+    border-radius: inherit;
+    border-color: inherit;
+}
+
+
+
+  .Footer--home
+  {
+    
+      width: 100%!important;
+      height: 99px!important;
+      position: absolute!important;
+      top: 683px!important;
+      left: 0px!important;
+      
+
+  }
+
+}
+@media only  screen and (min-width: 370px) and (max-width: 430px) 
+{
+
+  body 
+  {
+    background-image: url(./images/DarkForest.jpg);
+    overflow-x: hidden;
+    height: 761px!important;
+  }
+
+  /* Set this first  to get all elements  */
+  main 
+   {
+    height: auto;
+    width:  auto;
+   }
+
+   .Navigation 
+   {
+    display: none;
+  }
+
+.ShowCaseCard 
+  {
+      position: absolute;
+      width: 38% !important;
+      height: 14% !important;
+      top: 233px !important;
+      left: 383px !important;
+      perspective:1000px;
+      transform-style: preserve-3d;
+  }
+  
+  
+ 
+    
+  .ShowCaseCard--front 
+  {
+      position: absolute;
+      color: yellow;
+      padding: 44px;
+      width: 136% !important;
+      height: 175% !important;
+      left: -336px;
+      backdrop-filter: blur(9px);
+      background: rgba(0,255,0,0.5);
+      backface-visibility: hidden;
+  }
+
+    .ShowCaseCard--front_OwlerContainer
+    {
+      
+      top: -74px !important;
+      left: 48px !important;
+      height: 56% !important;
+      width: 21px;
+      position: relative;
+
+      
+     
+    }
+  
+  
+.Owler_subtitle
+{
+  color: yellow;
+    position: relative;
+    font-size: 20px !important;
+    left: 72px !important;
+    top: -253px !important;
+}
+
+  .ShowCaseCard—front_CoreSkillBadges
+  {
+    position:absolute;
+    top: -194px !important;
+    right: -83px !important;
+  }
+
+
+  .ShowCaseCard—front_CoreSkillBadges--text
+  {
+    position: relative;
+    left: 20px !important;
+    top: -35px !important;
+    font-size: 19px!important;
+  }
+
+
+
+  .ShowCaseCard--front_CoreSkillBadges_js_badge--text 
+  {
+    position: absolute;
+    left: -13px!important;
+    top: 48px!important;
+    font-size: 15px!important;
+}
+
+
+
+  .ShowCaseCard--front_CoreSkillBadges_react_badge--text 
+  {
+    position: absolute;
+    left: 64px!important;
+    top: 48px!important;
+    font-size: 15px!important;
+}
+
+
+  .ShowCaseCard—front_CoreSkillBadges--skill_logos
+  {
+      position:relative;
+      height: 10px!important;
+      width:10px!important;
+      left: 20px !important;
+      top: -36px !important;
+  }
+    
+
+
+  .ShowCaseCard--front_CoreSkillBadges_js_badge, .ShowCaseCard--front_CoreSkillBadges_react_badge 
+{   
+  width: 36px !important;
+  height: 28px !important;
+}
+
+
+.ShowCaseCard--front_CoreSkillBadges_js_badge
+{
+  position: relative;
+  top: 12px!important;
+  height: 36px;
+  right: 1px!important;
+  
+}
+
+
+
+.ShowCaseCard--front_CoreSkillBadges_react_badge
+{
+  position: relative;
+  top: -38px!important;
+  height: 36px;
+  left: 58px!important;
+  
+}
+
+
+   .ShowCaseCard:hover 
+   {
+     animation: CardRotation 6s forwards;
+     backface-visibility: hidden;
+    }
+
+
+
+  .HamBurger 
+  {
+    color: yellow!important;
+    display: block;
+    position: relative;
+    left: 21px;
+    top: 28px;
+    font-size: 34px;
+  }
+
+  #HamBurger_Menu 
+  {
+    display: none;
+  }
+
+  nav 
+  {
+    display: none;
+  }
+
+  #Background 
+  {
+    height: 60px;
+  }
+
+  input[type='checkbox']:checked ~ .Menu 
+  {
+    position: absolute;
+    display: block;
+    background-color: #007bb5;
+    width: 100px;
+    height: 200px;
+    z-index: 2;
+    float: right;
+    left: -47px;
+    top: 59px;
+  }
+
+  .Logo 
+  {
+    width: 50px;
+    height: 55px;
+  }
+
+  .LandingDescription 
+  {
+    top: 500px;
+    left: 100px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .Owl 
+  {
+    position: relative;
+    left: 0px;
+    height: 150px;
+    width: 141px;
+  }
+
+  .Owl2 
+  {
+    height: 150px;
+    width: 141px;
+    top: 139px;
+    left: -130px;
+  }
+
+  .Owler 
+  {
+    top: 100px;
+    left: -60px;
+  }
+
+
+
+  .Footer--home
+  {
+    
+      width: 100%!important;
+      height: 99px!important;
+      position: absolute!important;
+      top: 683px!important;
+      left: 0px!important;
+      
+
+  }
+
+
+  .Site--Map
+  {
+     display: none;
+  }
+
+  .Contact-Icons 
+  {
+    position: relative;
+    font-size: 20px;
+    left: 74px!important;
+    top: 6px!important;
+    display: flex;
+}
+
+
+
+}
+
+@media only  screen and (min-width: 496px) and (max-width: 513px) 
+{
+
+
+  body 
+  {
+    background-image: url(./images/DarkForest.jpg);
+    overflow-x: hidden;
+
+    height: 761px!important;
+  }
+/* Set this first  to get all elements  */
+  main 
+   {
+    height: auto;
+    width:auto;
+   }
+.Navigation {display: none;}
+.ShowCaseCard 
+  {
+      position: absolute;
+      width: 46% !important ;
+      height: 25% !important ;
+      top: 274px!important;
+      left: 407px!important;
+      perspective:1000px;
+      transform-style: preserve-3d;
+  }
+  
+  
+ 
+    
+  .ShowCaseCard--front 
+  {
+      position: absolute;
+      color: yellow;
+      padding: 44px;
+      width: 136% !important;
+      height: 175% !important;
+      left: -336px;
+      backdrop-filter: blur(9px);
+      background: rgba(0,255,0,0.5);
+      backface-visibility: hidden;
+  }
+
+    .ShowCaseCard--front_OwlerContainer
+    {
+      
+      color: yellow;
+      padding: 0;
+      margin: 0;
+      top: -45px !important;
+      left: 27px !important;
+      height: 45% !important;
+     
+    }
+  
+  
+.Owler_subtitle
+{
+  color: yellow;
+    position: relative;
+    font-size: 20px !important;
+    left: 72px !important;
+    top: -253px !important;
+}
+
+  .ShowCaseCard—front_CoreSkillBadges
+  {
+    position:absolute;
+    top: -194px !important;
+    right: -83px !important;
+  }
+
+
+  .ShowCaseCard—front_CoreSkillBadges--text
+  {
+    position: relative;
+    left: 20px !important;
+    top: -35px !important;
+    font-size: 19px!important;
+  }
+
+
+
+  .ShowCaseCard--front_CoreSkillBadges_js_badge--text 
+  {
+    position: absolute;
+    left: -13px!important;
+    top: 48px!important;
+    font-size: 15px!important;
+}
+
+
+
+  .ShowCaseCard--front_CoreSkillBadges_react_badge--text 
+  {
+    position: absolute;
+    left: 64px!important;
+    top: 48px!important;
+    font-size: 15px!important;
+}
+
+
+  .ShowCaseCard—front_CoreSkillBadges--skill_logos
+  {
+      position:relative;
+      height: 10px!important;
+      width:10px!important;
+      left: 20px !important;
+      top: -36px !important;
+  }
+    
+
+
+  .ShowCaseCard--front_CoreSkillBadges_js_badge, .ShowCaseCard--front_CoreSkillBadges_react_badge 
+{   
+  width: 36px !important;
+  height: 28px !important;
+}
+
+
+.ShowCaseCard--front_CoreSkillBadges_js_badge
+{
+  position: relative;
+  top: 12px!important;
+  height: 36px;
+  right: 1px!important;
+  
+}
+
+
+
+.ShowCaseCard--front_CoreSkillBadges_react_badge
+{
+  position: relative;
+  top: -38px!important;
+  height: 36px;
+  left: 58px!important;
+  
+}
+
+
+   .ShowCaseCard:hover 
+   {
+     animation: CardRotation 6s forwards;
+     backface-visibility: hidden;
+    }
+
+
+
+  .HamBurger 
+  {
+    color: yellow!important;
+    display: block;
+    position: relative;
+    left: -6px;
+    top: 28px;
+    font-size: 10px;
+  }
+
+  #HamBurger_Menu 
+  {
+    display: none;
+  }
+
+
+
+
+  nav 
+  {
+    display: none;
+  }
+
+  #Background 
+  {
+    height: 60px;
+  }
+
+  input[type='checkbox']:checked ~ .Menu 
+  {
+    position: absolute;
+    display: block;
+    background-color: #007bb5;
+    width: 100px;
+    height: 200px;
+    z-index: 2;
+    float: right;
+    left: -1px!important;
+    top: 59px;
+  }
+
+.Menu
+{
+	
+	
+	text-decoration: none!important;
+	
+}
+  .Logo 
+  {
+    width: 50px;
+    height: 55px;
+  }
+
+  .LandingDescription 
+  {
+    top: 500px;
+    left: 100px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .Owl 
+  {
+    position: relative;
+    left: 0px;
+    height: 150px;
+    width: 141px;
+  }
+
+  .Owl2 
+  {
+    height: 150px;
+    width: 141px;
+    top: 139px;
+    left: -130px;
+  }
+
+  .Owler 
+  {
+    top: 100px;
+    left: -60px;
+  }
+
+
+
+
+  footer 
+  {
+    top: 400px;
+  }
+
+  .Site--Map
+  {
+     display: none;
+  }
+
+  .Contact-Icons 
+  {
+    position: relative;
+    font-size: 20px;
+    left: 74px!important;
+    top: 6px!important;
+    display: flex;
+}
+
+
+
+}
+
+
+

@@ -4,17 +4,19 @@
       <meta charset="UTF-8">
       <title>Portfolio</title>
       <meta name="viewport" content="width=device-width,height=device-height user-scalable=yes, initial-scale=1, minimum-scale=1.0">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="icon"  type ="image/svg" href="./images/MaciekLogo.svg">
       <link rel="stylesheet" href="css/style.css">
+      
+
     </head>
  
 
-    <body style="background-image: url(./images/DarkForest.jpg);overflow-x: hidden;">
+    <body >
 
         <header id="Header_Work">
-            <img class="Logo" src="./images/MaciekLogo.svg">
-            <button class="Blog_link-button"><a href="https://globealpha.github.io/DevUpdates-Blog/">Dev Updates Blog </a></button>
+            
+           <a href="index.html"> <img class="Logo" src="./images/MaciekLogo.svg"></a>
+            <button class="Blog_link-button"><a href="https://globealpha.github.io/DevUpdates-Blog/">Blog </a></button>
 
             <nav class="Navigation">
                 <a href="index.html" class="Navigation--Tab active--tab">
@@ -47,13 +49,17 @@
         </header>
 
 
+        <main>
 
-    
         <article class="ShowCaseCard">
             <div class="ShowCaseCard--front">
                 <figure class="ShowCaseCard--front_OwlerContainer">
-                    <img class="ShowCaseCard--front_OwlerContainer" src="images/owler.svg" alt="Owler">
-                </figure>
+                    <img  class="Owler_Image" src="images/owler.svg" alt="Owler">
+                
+            
+            
+            
+            </figure>
 
                 <h1 class="Owler_subtitle">Front End Developer</h1>
 
@@ -72,7 +78,7 @@
                     </section>
                     <br />
                 </div>
-                <button class="rotate--button" type="button" >Rotate</button>
+                <button class="rotate--button" type="button" ><a id="text">Hover to Showcase</a></button>
             </div>
 
 
@@ -81,14 +87,16 @@
 
 
                 <section class="ShowCaseCard—-back_gallery">
-                <img src="images/LandExplorer_LandForSale.png" alt=" LandExplorer_Land_For_Sale " class="ShowCaseCard—-back_thumbnail" />
+                <img src="images/LandExplorer_LandForSale.png" alt=" LandExplorer_Land_For_Sale " id="Land_Explorer" class="ShowCaseCard—-back_thumbnail" />
                 <p class="ShowCaseCard—-back_text" id="LX_text">Land Explorer</p>
                 
-                <img src="images/Twine_ViewLog.png" alt="Twine_View_Log" class="ShowCaseCard—-back_thumbnail" />
+                <img src="images/Twine_ViewLog.png" alt="Twine_View_Log"  id="Twine"class="ShowCaseCard—-back_thumbnail" />
                 <p class="ShowCaseCard—-back_text" id="Twine_text">Twine</p>
                 
-                <img src="images/Payment_Form.png" alt="Payment_Form" class="ShowCaseCard—-back_thumbnail" />
+                <img src="images/Payment_Form.png" alt="Payment_Form" id="Payment_Form" class="ShowCaseCard—-back_thumbnail" />
                 <p class="ShowCaseCard—-back_text" id="PaymentForm_text">Payment Form</p> 
+            
+              <!-- <button  class="show--more" type="button"> <a href="Work.html">show more...</a></button> -->
                 </section>
                 <br />
             </div>
@@ -97,8 +105,8 @@
         <br />
         <br />
         <br />
-
-        <footer style="background-color: brown; width: 100%;height: 100px; position: relative;top: 575px;">
+</main>
+        <footer class="Footer--home">
 
         <section class="Site--Map"><h5>Sitemap</h5></section>
 

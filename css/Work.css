@@ -6,6 +6,18 @@ Tags: Portfolio Work
 
 
 
+body 
+{
+    
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    height: 100%;
+
+}
+
+
 
 #Work 
 {
@@ -37,11 +49,12 @@ Tags: Portfolio Work
 }
 
 
+/* Tech Filters */
 
 .JS
 {
 display:block;
-background:white;
+
 }
 
 
@@ -55,18 +68,93 @@ background:white;
    transform-style: preserve-3d;
 }
 
+/* Hover function */
+
+.Project--Card:hover 
+{
+  animation: CardRotation 6s forwards;
+  backface-visibility: hidden;
+ }
+
 
 
 .Project--Card_front 
 {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    background: green;
+
+    position: absolute;
+    left: 0px;
+ 
+    margin-right: 50px;
+    width: 250px;
+    height: 412px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+
+   background: green;
     padding: 44px;
     backface-visibility: hidden;
 }
 
+
+.Project--Card_Back
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: green;
+    margin-right: 50px;
+    width: 250px;
+    height: 412px;
+    padding:44px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+ backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+}
+
+.Project--Card_rotate--button
+{
+    position: absolute;
+    top: 392px;
+    left: 63px;
+    width: 202px;
+    height: 45px;
+    border-radius: inherit;
+    border-color: inherit
+
+}
+
+
+
+.ProjectShowcase_thumbnail
+{
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    top: 0px;
+    left:1px;
+    width: 337px;
+    height: 302px;
+}
+
+.FeatureDescription
+{
+    position: absolute;
+    top: 301px;
+    left: 10px; 
+    width: 100%;
+    height: 51%;
+    border-bottom-left-radius: inherit; 
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+/* Filter */
 
 .Project--Type_Filter 
 {
@@ -80,30 +168,31 @@ background:white;
    display: inline-flex;padding-left: -8px;
 }
 
-.Project--Type-dropdown {
+.Project--Type-dropdown 
+{
     position: relative;
     left: 500px;
     bottom: 57px;
 }
 
-
-
 .Work_Gallery 
 {
-  
     position: relative;
     top: 181px;
-    left: 100px;
+    left: 18px !important;
     display: grid;
-    grid-template-columns: repeat(3,300px);
-    grid-template-rows: repeat(3,300px);
-    grid-gap: 118px;
-    height: 873px;
+    grid-template-columns: repeat( 3, minmax(250px, 1fr) );
+    grid-template-rows:  repeat( 3, minmax(250px, 1fr) );
+    grid-gap: 206px;
+    height: 1398px;
 }
 
 
 
-.Project--Thumbnail {
+
+
+.Project--Thumbnail 
+{
     border: solid 1px white;
     /* background: white; */
     font-size: 10px;
@@ -190,7 +279,7 @@ h3
 {
     background-color: brown;
     width: 100%;
-    height: 140px;
+    height: 122px;
     position: relative;
-    top: 139px;
+    top: 121px;
 }
