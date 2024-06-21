@@ -145,7 +145,7 @@ display:block;
 .FeatureDescription
 {
     position: absolute;
-    top: 301px;
+    top: 355px;
     left: 10px; 
     width: 100%;
     height: 51%;
@@ -153,6 +153,16 @@ display:block;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
 }
+
+
+.FeatureDescription_text
+{
+    position: relative;
+    top: 276px;
+    left:-36px
+}
+
+
 
 /* Filter */
 
