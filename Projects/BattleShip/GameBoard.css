@@ -1,0 +1,91 @@
+table
+{
+  position: relative;
+  left: 100px;
+    width: 500px;
+    height: 600px;
+}
+
+tr,td
+{
+border: solid black 1px;
+padding: 0px;
+
+}
+
+
+.Row_Legend
+{
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: 59px;
+    top: -479px;
+
+   
+}
+
+
+
+
+p#A
+{
+    position: relative;
+    top: -134px;
+} 
+
+p#B
+{
+   position: relative;
+   top: -104px;}
+
+
+p#C
+ {  
+    position: relative;
+    top: -70px;
+ }
+
+p#D
+{
+    position: relative;
+    top: -46px;
+}
+
+
+p#E
+ {   position: relative;
+    top: -17px;}
+p#F
+{   
+    position: relative;
+    top: 10px;
+}
+
+p#G
+{
+    position: relative;
+    top: 37px;
+}
+
+
+
+.hit
+{
+background-color: red;
+}
+
+.miss
+{
+background-color: blue;
+}
+
+
+.Ship
+{
+    width: 60px;
+    height: 60px;
+  
+}
+
+
