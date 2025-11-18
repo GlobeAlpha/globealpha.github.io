@@ -68,13 +68,20 @@ display:block;
    transform-style: preserve-3d;
 }
 
+
+
+a:visited
+{
+    text-decoration: none;
+    color: blue;
+}
 /* Hover function */
 
-.Project--Card:hover 
+/* .Project--Card:hover 
 {
   animation: CardRotation 6s forwards;
   backface-visibility: hidden;
- }
+ } */
 
 
 
