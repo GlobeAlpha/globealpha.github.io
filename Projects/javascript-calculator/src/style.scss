@@ -1,0 +1,51 @@
+$Border_Radius:2em;
+$Margin:auto;
+$MarginPadding_Top:20px;
+body
+{
+   background-color:black;
+   
+}
+
+h1
+{
+   color:red;
+   text-align:center;
+}
+
+#Output
+{
+   background-color:white;
+   aligment:center;
+   width:270px;
+   height:75px;
+   border-top-left-radius:$Border_Radius;
+   border-top-right-radius:$Border_Radius;
+   margin-right:$Margin;
+   margin-left:$Margin;
+   margin-top:$MarginPadding_Top;
+   padding-top:$MarginPadding_Top;
+}
+
+#Calculator
+{
+      background:pink;
+      width:275px;
+      padding-top:$MarginPadding_Top;
+      padding-bottom:$MarginPadding_Top;
+      border-bottom-left-radius:$Border_Radius;
+      border-bottom-right-radius:$Border_Radius;
+      margin-left:$Margin;
+      margin-right:$Margin;
+}
+
+#Calculations
+{
+   padding-left:50px;
+   font-size:2em;
+   
+}
+a
+{
+   margin:5px;
+}

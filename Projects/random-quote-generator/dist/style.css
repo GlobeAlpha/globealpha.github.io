@@ -1,0 +1,15 @@
+body {
+  background: black;
+}
+
+#DivMain {
+  border-style: solid;
+  border-color: white;
+  width: 40%;
+  height: 40px;
+  color: white;
+}
+
+#Title {
+  color: white;
+}

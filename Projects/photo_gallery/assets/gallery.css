@@ -1,0 +1,85 @@
+/* 
+Author: Maciek Bajda
+Style Sheet Name:  Gallery.css
+Description: CSS Grid Based Gallery.
+Tags: Image gallery, Grid, Grid Image Gallery
+
+*/
+
+.image-gallery
+{
+/*   Position and Border  */
+   position:relative;
+   left:300px;
+   top:100px;
+   
+   /*  Grid COntainer properties */
+   display:grid;
+   grid-template-columns:repeat(4,164px);
+   grid-template-rows: repeat(4,109px);
+   grid-gap:20px;
+}
+
+
+img
+{
+   width:164px;
+   height:109px;
+   border:solid 1px black;
+}
+
+
+#cloud_caption
+{
+   position: absolute;
+   top: 192px;
+   left: 9px;
+  
+   color: white;
+   width: 165px;
+   text-align: center;
+   background: black;
+}
+
+
+#oak_caption
+{
+   position: absolute;
+   top: 192px;
+   left: 9px;
+  
+   color: white;
+   width: 165px;
+   text-align: center;
+   background: black;
+}
+
+
+#moon_caption
+{
+   position: absolute;
+   top: 192px;
+   left: 9px;
+  
+   color: white;
+   width: 165px;
+   text-align: center;
+   background: black;
+}
+
+
+.active
+{
+  display: block;
+   width:164px;
+   height:109px;
+   border:solid 1px black;
+
+} 
+
+.inactive
+{
+   display: none;
+}
+
+
